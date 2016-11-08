@@ -1,6 +1,9 @@
 //Author : Gareth Dunne
 //Student No. : C14533333
 //Date: 08/11/16
+
+
+
 int numHorizontalLines = 10;
 int numVerticalLines = 10;
 
@@ -82,11 +85,7 @@ void draw(){
   
 drawLineGraph();
 diplayDistance();
-if (mousePressed == true) {
-    stroke(255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  }
-  
+
   
 }
 
