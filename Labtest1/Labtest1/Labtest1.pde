@@ -18,6 +18,8 @@ String data[] = loadStrings("desktop/HabHYG15ly.csv");
 for (int i = 0 ; i < data.length   ; i++) 
       {
           String[] list = split(data[i], ',');
+          // putting values into temporary list to be distributed into class variables
+          
           String hab = list[2];
           String displayname = list[3];
           String distance = list[12];
@@ -38,11 +40,8 @@ for (int i = 0 ; i < data.length   ; i++)
           String zg ;
           String absmag ;
               }//end class
-  
-  
-  
-  
-  
+               
+//function to draw the graph to 
   
 void drawLineGraph() 
 {
