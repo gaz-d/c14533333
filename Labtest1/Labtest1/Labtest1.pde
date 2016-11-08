@@ -35,13 +35,13 @@ for (int i = 0 ; i < data.length   ; i++)
 }//end setup
 
     class star{
-          String hab ;
-          String displayname; 
-          String distance; 
-          String xg ;
-          String yg ;
-          String zg ;
-          String absmag ;
+                String hab ;
+                String displayname; 
+                String distance; 
+                String xg ;
+                String yg ;
+                String zg ;
+                String absmag ;
               }//end class
                
 //function to draw the graph to 
@@ -53,41 +53,40 @@ void drawLineGraph()
   float distanceBetweenVerticalLines = (float)width/numVerticalLines  ;
 
   for(int i = 0; i < numHorizontalLines; i++)
-  {
-    line(0, i*distanceBetweenHorizontalLines, width -10 , i*distanceBetweenHorizontalLines);
-
-  }
+    {
+        line(0, i*distanceBetweenHorizontalLines, width -10 , i*distanceBetweenHorizontalLines);
+    
+    }
 
   for(int i = 0; i < numVerticalLines; i++)
   {
     line (i*distanceBetweenVerticalLines,0,i*distanceBetweenVerticalLines, height -10 );
   }
 
-}
+}//end graph function
 
 void diplayDistance(){
-    if (mousePressed == true) {
-    stroke(100,0,100);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-    
+      if (mousePressed == true) 
+      {
+        stroke(100,0,100);
+        line(mouseX, mouseY, pmouseX, pmouseY);
+        
   }
-  float d = dist(mouseX, mouseY, pmouseX, pmouseY);
-  
-  println(d);
-}
+        float d = dist(mouseX, mouseY, pmouseX, pmouseY);
+        
+          println(d);
+}//end function
 
   
- 
-
-
 
 void draw(){
   
-drawLineGraph();
-diplayDistance();
+    drawLineGraph();
+    diplayDistance();
+    //functions called to draw graph and display distance between lines
 
   
-}
+}//end draw
 
 
 
