@@ -62,15 +62,32 @@ void drawLineGraph()
 
 }
 
+void diplayDistance(){
+    if (mousePressed == true) {
+    stroke(100,0,100);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    
+  }
+  float d = dist(mouseX, mouseY, pmouseX, pmouseY);
+  
+  println(d);
+}
+
+  
+ 
+
+
 
 void draw(){
   
 drawLineGraph();
-
+diplayDistance();
 if (mousePressed == true) {
     stroke(255);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
+  
+  
 }
 
 
